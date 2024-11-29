@@ -9,11 +9,13 @@
  */
 
 using Cosmos.System;
+using saor.Audio;
 
 namespace saor.Core
 {
     public class Program : Kernel
     {
+        public static SoundManager soundManager;
         protected override void BeforeRun()
         {
 
@@ -21,7 +23,7 @@ namespace saor.Core
 
         protected override void Run()
         {
-            
+
         }
     }
 }

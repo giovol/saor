@@ -8,11 +8,6 @@
  * Project link: https://github.com/g1opto/saor
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Cosmos.HAL.Drivers.Audio;
 using Cosmos.System.Audio;
 
@@ -25,7 +20,6 @@ namespace saor.Audio
         public bool Enabled;
         public SoundManager()
         {
-
             Mixer = new();
             Manager = new()
             {
