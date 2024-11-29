@@ -16,33 +16,47 @@ namespace saor.Core
     {
         public static void WriteError(string message)
         {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
-            Console.ResetColor();
-        }
-        public static void WriteWarning(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(message);
-            Console.ResetColor();
-        }
-        public static void WriteInfo(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(message);
-            Console.ResetColor();
+            Console.Write("ERROR");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("]: ");
+            Console.Write(message);
+            Console.WriteLine();
         }
         public static void WriteSuccess(string message)
         {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(message);
-            Console.ResetColor();
+            Console.Write("SUCCESS");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("]: ");
+            Console.Write(message);
+            Console.WriteLine();
         }
         public static void WriteDebug(string message)
         {
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine(message);
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("DEBUG");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("]: ");
+            Console.Write(message);
+            Console.WriteLine();
+        }
+        public static void WriteInfo(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("INFO");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("]: ");
+            Console.Write(message);
+            Console.WriteLine();
         }
     }
 }

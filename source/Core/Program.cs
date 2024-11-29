@@ -18,7 +18,7 @@ namespace saor.Core
         public static SoundManager soundManager;
         protected override void BeforeRun()
         {
-
+            
         }
 
         protected override void Run()

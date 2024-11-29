@@ -10,6 +10,8 @@
 
 
 using System;
+using Cosmos.System.Graphics;
+using Cosmos.System.Graphics.Fonts;
 
 namespace saor.Core
 {
@@ -17,16 +19,30 @@ namespace saor.Core
     {
         public static void Boot()
         {
+            // Initialize the console
+            CustomConsole.WriteDebug("Initializing console...");
+            try
+            {
+                VGAScreen.SetFont(PCScreenFont.Default.CreateVGAFont(), PCScreenFont.Default.Height);
+                CustomConsole.WriteSuccess("Console initialized");
+            }
+            catch (Exception ex)
+            {
+                CustomConsole.WriteError("Failed to initialize console: " + ex.Message);
+            }
             // Initialize the sound manager
+            CustomConsole.WriteDebug("Initializing sound manager...");
             try
             {
                 Program.soundManager = new();
+                CustomConsole.WriteSuccess("Sound manager initialized");
             }
             catch (Exception ex)
             {
                 // If the sound manager fails to initialize, the system will continue to boot without sound
-                Console.WriteLine("Failed to initialize the sound manager: " + ex.Message);
+                CustomConsole.WriteError("Failed to initialize sound manager: " + ex.Message);
             }
+
         }
     }
 }
