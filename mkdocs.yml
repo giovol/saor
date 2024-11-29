@@ -1,18 +1,8 @@
 site_name: saor Documentation
-site_url: https://g1o.tech/saor/
+site_url: 'https://g1o.tech/saor/'
 theme:
   name: material
-  palette: 
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        name: Dark mode
-        primary: purple
-        accent: deep purple
-
-    # Light Mode
-    - scheme: default
-      toggle:
-        name: Light mode
-        primary: purple
-        accent: deep purple
+  palette:
+    scheme: slate
+  icon:
+    logo: bootstrap/envelope-paper
