@@ -19,7 +19,7 @@ namespace saor.Core
     {
         public static void Boot()
         {
-            // Initialize the console
+            // Initialize the PCScreenFont
             CustomConsole.WriteDebug("Initializing console...");
             try
             {
@@ -28,9 +28,13 @@ namespace saor.Core
             }
             catch (Exception ex)
             {
-                CustomConsole.WriteError("Failed to initialize console: " + ex.Message);
+                // If the PCScreenFont fails to initialize, the system will not boot (most likely not happening)
+                CustomConsole.WriteError("Failed to initialize PCScreenFont: " + ex.Message);
+                CustomConsole.WriteInfo("System shutting down in 5 seconds...");
+                System.Threading.Thread.Sleep(5000);
+                Cosmos.System.Power.Shutdown();
             }
-            // Initialize the sound manager
+            // Initialize the sound manager (WORKS ONLY ON VIRTUALBOX AND AC97 AUDIO CARDS)
             CustomConsole.WriteDebug("Initializing sound manager...");
             try
             {
@@ -42,6 +46,7 @@ namespace saor.Core
                 // If the sound manager fails to initialize, the system will continue to boot without sound
                 CustomConsole.WriteError("Failed to initialize sound manager: " + ex.Message);
             }
+
 
         }
     }
