@@ -1,8 +1,0 @@
-site_name: saor Documentation
-site_url: 'https://g1o.tech/saor/'
-theme:
-  name: material
-  palette:
-    scheme: slate
-  icon:
-    logo: bootstrap/envelope-paper
