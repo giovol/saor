@@ -1,0 +1,20 @@
+site_name: saor Documentation
+site_url: https://g1o.tech/saor/
+theme:
+  name: material
+  palette: 
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/phishing
+        name: Dark mode
+        primary: purple
+        accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/phishing
+        name: Light mode
+        primary: purple
+        accent: deep purple
