@@ -6,7 +6,6 @@ theme:
     # Dark Mode
     - scheme: slate
       toggle:
-        icon: material/phishing
         name: Dark mode
         primary: purple
         accent: deep purple
@@ -14,7 +13,6 @@ theme:
     # Light Mode
     - scheme: default
       toggle:
-        icon: material/phishing
         name: Light mode
         primary: purple
         accent: deep purple
