@@ -1,8 +1,0 @@
-title: saor docs
-description: >- # this means to ignore newlines until "baseurl:"
-  Documentation for saor operating system, a Cosmos-based operating system made in C#.
-baseurl: "/saor"
-url: "https://g1o.tech"
-twitter_username: g1opto
-github_username:  g1opto
-remote_theme: just-the-docs/just-the-docs@v0.10.0
