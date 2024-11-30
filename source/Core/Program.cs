@@ -10,15 +10,16 @@
 
 using Cosmos.System;
 using saor.Audio;
+using saor.Network;
 
 namespace saor.Core
 {
     public class Program : Kernel
     {
         public static SoundManager soundManager;
+        public static NetworkManager networkManager;
         protected override void BeforeRun()
         {
-            
         }
 
         protected override void Run()
