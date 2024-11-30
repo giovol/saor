@@ -33,6 +33,7 @@ namespace saor.Network
         public NetworkManager()
         {
             _ = new DHCPClient().SendDiscoverPacket();
+            // Connect to DNS (Cloudflare)
             DNSClient.Connect(new(1, 1, 1, 1));
         }
         public static ulong Ping(string address)

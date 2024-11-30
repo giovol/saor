@@ -58,5 +58,16 @@ namespace saor.Core
             Console.Write(message);
             Console.WriteLine();
         }
+        public static void WriteWarning(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("WARNING");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("]: ");
+            Console.Write(message);
+            Console.WriteLine();
+        }
     }
 }
