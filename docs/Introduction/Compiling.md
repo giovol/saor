@@ -1,3 +1,9 @@
+---
+title: Compiling
+parent: Introduction
+nav_order: 2
+---
+
 # Compiling 
 
 ### Prerequisites
