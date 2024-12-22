@@ -1,3 +1,9 @@
+---
+title: Name and origins
+parent: Introduction
+nav_order: 1
+---
+
 # Name and origins
 
 The name is inspired by a italian dish: "Sarde in saor".
