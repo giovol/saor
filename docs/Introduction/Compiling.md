@@ -33,6 +33,7 @@ You can just compile from the command line using this command:
 dotnet build .\saor.csproj
 ```
 
+
 {: .note }
 If you see some warnings in the compilation don't worry, it's completely normal.
 
