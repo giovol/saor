@@ -1,7 +1,7 @@
 ---
 title: Name and origins
 parent: Introduction
-nav_order: 1
+nav_order: 2
 ---
 
 # Name and origins
