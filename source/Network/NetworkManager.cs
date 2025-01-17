@@ -6,15 +6,9 @@
  * Code released under the BSD 3-Clause "New" or "Revised" License
  * License information: https://github.com/giovol/saor/blob/main/LICENSE
  * Project link: https://github.com/giovol/saor
- * Part of the code in this file is copied from AuraOS, wich is licensed under the BSD 3-Clause "New" or "Revised" License
+ * Part of the code in this file is modified from AuraOS, wich is licensed under the BSD 3-Clause "New" or "Revised" License
  * Source: https://github.com/aura-systems/Aura-Operating-System/blob/02b557b19cc2f6e93303769d2b2628495b5689ec/SRC/Aura_OS/System/Network/Http.cs
  */
-
-/*
-* PROJECT:          Aura Operating System Development
-* CONTENT:          Http utils class
-* PROGRAMMER(S):    Valentin Charbonnier <valentinbreiz@gmail.com>
-*/
 
 using System;
 using System.Net;

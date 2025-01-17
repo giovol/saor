@@ -20,6 +20,7 @@ namespace saor.Core
         public static NetworkManager networkManager;
         protected override void BeforeRun()
         {
+            
         }
 
         protected override void Run()
