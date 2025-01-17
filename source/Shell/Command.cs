@@ -1,3 +1,13 @@
+/*
+ * Command in saor.Shell
+ * 
+ * The saor project
+ * © 2024 Giovanni Voltan
+ * Code released under the BSD 3-Clause "New" or "Revised" License
+ * License information: https://github.com/giovol/saor/blob/main/LICENSE
+ * Project link: https://github.com/giovol/saor
+ */
+
 namespace saor.Shell
 {
 public class Command
@@ -13,7 +23,6 @@ public class Command
 
         public virtual string Execute(params string[] args)
         {
-            // Default implementation (if any)
             return string.Empty;
         }
     }
