@@ -4,8 +4,8 @@
  * The saor project
  * © 2024 Giovanni Voltan
  * Code released under the BSD 3-Clause "New" or "Revised" License
- * License information: https://github.com/g1opto/saor/blob/main/LICENSE
- * Project link: https://github.com/g1opto/saor
+ * License information: https://github.com/giovol/saor/blob/main/LICENSE
+ * Project link: https://github.com/giovol/saor
  */
 
 using System;

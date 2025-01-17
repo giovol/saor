@@ -4,8 +4,8 @@
  * The saor project
  * © 2024 Giovanni Voltan
  * Code released under the BSD 3-Clause "New" or "Revised" License
- * License information: https://github.com/g1opto/saor/blob/main/LICENSE
- * Project link: https://github.com/g1opto/saor
+ * License information: https://github.com/giovol/saor/blob/main/LICENSE
+ * Project link: https://github.com/giovol/saor
  * Part of the code in this file is copied from AuraOS, wich is licensed under the BSD 3-Clause "New" or "Revised" License
  * Source: https://github.com/aura-systems/Aura-Operating-System/blob/02b557b19cc2f6e93303769d2b2628495b5689ec/SRC/Aura_OS/System/Network/Http.cs
  */
