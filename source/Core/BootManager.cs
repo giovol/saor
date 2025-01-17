@@ -22,7 +22,7 @@ namespace saor.Core
             // Initialize font
             VGAScreen.SetFont(PCScreenFont.Default.CreateVGAFont(), PCScreenFont.Default.Height);
 
-            // Initialize the sound manager (WORKS ONLY ON VIRTUALBOX AND AC97 AUDIO CARDS)
+            // Initialize the sound manager (WORKS ONLY ON VIRTUALBOX AND ON AC97 AUDIO CARDS)
             CustomConsole.WriteDebug("Initializing sound manager...");
             try
             {
