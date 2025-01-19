@@ -9,7 +9,6 @@
  */
 
 
-using System;
 using Cosmos.System.Graphics;
 using Cosmos.System.Graphics.Fonts;
 
@@ -21,33 +20,6 @@ namespace saor.Core
         {
             // Initialize font
             VGAScreen.SetFont(PCScreenFont.Default.CreateVGAFont(), PCScreenFont.Default.Height);
-
-            // Initialize the sound manager (WORKS ONLY ON VIRTUALBOX AND ON AC97 AUDIO CARDS)
-            CustomConsole.WriteDebug("Initializing sound manager...");
-            try
-            {
-                Program.soundManager = new();
-                CustomConsole.WriteSuccess("Sound manager initialized");
-            }
-            catch (Exception ex)
-            {
-                // If the sound manager fails to initialize, the system will continue to boot without sound
-                CustomConsole.WriteError("Failed to initialize sound manager: " + ex.Message);
-                CustomConsole.WriteWarning("Sound disabled");
-            }
-
-            // Initialize the network manager
-            CustomConsole.WriteDebug("Initializing network manager...");
-            try
-            {
-                Program.networkManager = new();
-            }
-            catch (Exception ex)
-            {
-                // If the network manager fails to initialize, the system will continue to boot without network
-                CustomConsole.WriteError("Failed to initialize network manager: " + ex.Message);
-                CustomConsole.WriteWarning("Network disabled");
-            }
         }
     }
 }

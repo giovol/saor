@@ -9,23 +9,20 @@
  */
 
 using Cosmos.System;
-using saor.Audio;
-using saor.Network;
 
 namespace saor.Core
 {
     public class Program : Kernel
     {
-        public static SoundManager soundManager;
-        public static NetworkManager networkManager;
+        public static string OS_Name = "saor";
+        public static string OS_Version = "debug channel";
         protected override void BeforeRun()
         {
-            
+            Mirage.DE.DesktopEnvironment.Start(OS_Name, OS_Version);
         }
 
         protected override void Run()
         {
-
         }
     }
 }
