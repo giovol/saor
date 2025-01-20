@@ -10,6 +10,7 @@
 
 using Cosmos.System;
 using PrismAPI.Hardware.GPU;
+using saor.GUI.DE;
 
 namespace saor.Core
 {
@@ -23,7 +24,8 @@ namespace saor.Core
         public static string Path = "0:\\";
         protected override void BeforeRun()
         {
-            
+            Resources.Initialize();
+            WindowManager.Start();
         }
 
         protected override void Run()

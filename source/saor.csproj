@@ -27,6 +27,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Resources\Busy.bmp" />
+      <None Remove="Resources\DefaultFont.btf" />
+      <None Remove="Resources\Error.bmp" />
+      <None Remove="Resources\Link.bmp" />
+      <None Remove="Resources\Mouse.bmp" />
+      <None Remove="Resources\MouseDrag.bmp" />
+      <None Remove="Resources\MouseText.bmp" />
       <None Remove="Resources\Pointer.bmp" />
       <None Remove="Resources\Pointer_IBeam.bmp" />
       <None Remove="Resources\Pointer_Move.bmp" />
@@ -34,10 +41,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Include="Resources\Pointer.bmp" />
-      <EmbeddedResource Include="Resources\Pointer_IBeam.bmp" />
-      <EmbeddedResource Include="Resources\Pointer_Move.bmp" />
-      <EmbeddedResource Include="Resources\Pointer_Resize.bmp" />
+      <EmbeddedResource Include="Resources\Busy.bmp" />
+      <EmbeddedResource Include="Resources\DefaultFont.btf" />
+      <EmbeddedResource Include="Resources\Error.bmp" />
+      <EmbeddedResource Include="Resources\Link.bmp" />
+      <EmbeddedResource Include="Resources\Mouse.bmp" />
+      <EmbeddedResource Include="Resources\MouseDrag.bmp" />
+      <EmbeddedResource Include="Resources\MouseText.bmp" />
     </ItemGroup>
 
     <ItemGroup>

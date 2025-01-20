@@ -29,9 +29,6 @@ namespace saor.Core
         [ManifestResourceStream(ResourceName = "saor.Resources.Error.bmp")] private static byte[] rawError;
         public static Canvas Error;
 
-        [ManifestResourceStream(ResourceName = "saor.Resources.Background.bmp")] private static byte[] rawBackground;
-        public static Canvas Background;
-
         public static void GenerateFont() => Font = new Font(rawFont, 16);
 
         public static void Initialize()
@@ -42,7 +39,6 @@ namespace saor.Core
             Busy = Image.FromBitmap(rawBusy, false);
             Link = Image.FromBitmap(rawLink, false);
             Error = Image.FromBitmap(rawError, false);
-            Background = Image.FromBitmap(rawBackground, false);
         }
     }
 }
