@@ -9,6 +9,7 @@
  */
 
 using Cosmos.System;
+using PrismAPI.Hardware.GPU;
 
 namespace saor.Core
 {
@@ -16,9 +17,13 @@ namespace saor.Core
     {
         public static string OS_Name = "saor";
         public static string OS_Version = "debug channel";
+        public static string Username = "user";
+        public static string Copyright = "(c) 2025 Giovanni Voltan";
+        public static Display Canvas;
+        public static string Path = "0:\\";
         protected override void BeforeRun()
         {
-            Mirage.DE.DesktopEnvironment.Start(OS_Name, OS_Version);
+            
         }
 
         protected override void Run()

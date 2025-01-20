@@ -27,97 +27,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="Resources\Button.bmp" />
-      <None Remove="Resources\Button_Press.bmp" />
-      <None Remove="Resources\Cantarell.acf" />
-      <None Remove="Resources\CantarellBold.acf" />
-      <None Remove="Resources\CantarellLarge.acf" />
-      <None Remove="Resources\CheckBox.bmp" />
-      <None Remove="Resources\CheckBox_Checked.bmp" />
-      <None Remove="Resources\Close.bmp" />
-      <None Remove="Resources\Close_Hover.bmp" />
-      <None Remove="Resources\Close_Press.bmp" />
-      <None Remove="Resources\Computer.bmp" />
-      <None Remove="Resources\ContextMenuSelectionGradient.bmp" />
-      <None Remove="Resources\DVD.bmp" />
-      <None Remove="Resources\Keyboard.bmp" />
-      <None Remove="Resources\LiberationSerif.acf" />
-      <None Remove="Resources\Max.bmp" />
-      <None Remove="Resources\Max_Hover.bmp" />
-      <None Remove="Resources\Max_Press.bmp" />
-      <None Remove="Resources\MenuSelectionGradient.bmp" />
-      <None Remove="Resources\Min.bmp" />
-      <None Remove="Resources\Min_Hover.bmp" />
-      <None Remove="Resources\Min_Press.bmp" />
       <None Remove="Resources\Pointer.bmp" />
       <None Remove="Resources\Pointer_IBeam.bmp" />
       <None Remove="Resources\Pointer_Move.bmp" />
       <None Remove="Resources\Pointer_Resize.bmp" />
-      <None Remove="Resources\Power.bmp" />
-      <None Remove="Resources\Question.bmp" />
-      <None Remove="Resources\RadioButton.bmp" />
-      <None Remove="Resources\RadioButton_Checked.bmp" />
-      <None Remove="Resources\Segment.acf" />
-      <None Remove="Resources\Serif.acf" />
-      <None Remove="Resources\Shadow_Corner_BottomLeft.bmp" />
-      <None Remove="Resources\Shadow_Corner_BottomRight.bmp" />
-      <None Remove="Resources\Shadow_Corner_TopLeft.bmp" />
-      <None Remove="Resources\Shadow_Corner_TopRight.bmp" />
-      <None Remove="Resources\Shadow_Edge_Bottom.bmp" />
-      <None Remove="Resources\Shadow_Edge_Left.bmp" />
-      <None Remove="Resources\Shadow_Edge_Right.bmp" />
-      <None Remove="Resources\Shadow_Edge_Top.bmp" />
-      <None Remove="Resources\TitleBar_Left.bmp" />
-      <None Remove="Resources\TitleBar_Middle.bmp" />
-      <None Remove="Resources\TitleBar_Right.bmp" />
-      <None Remove="Resources\Wallpaper.bmp" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Include="Resources\Button.bmp" />
-      <EmbeddedResource Include="Resources\Button_Press.bmp" />
-      <EmbeddedResource Include="Resources\Cantarell.acf" />
-      <EmbeddedResource Include="Resources\CantarellBold.acf" />
-      <EmbeddedResource Include="Resources\CantarellLarge.acf" />
-      <EmbeddedResource Include="Resources\CheckBox.bmp" />
-      <EmbeddedResource Include="Resources\CheckBox_Checked.bmp" />
-      <EmbeddedResource Include="Resources\Close.bmp" />
-      <EmbeddedResource Include="Resources\Close_Hover.bmp" />
-      <EmbeddedResource Include="Resources\Close_Press.bmp" />
-      <EmbeddedResource Include="Resources\Computer.bmp" />
-      <EmbeddedResource Include="Resources\ContextMenuSelectionGradient.bmp" />
-      <EmbeddedResource Include="Resources\DVD.bmp" />
-      <EmbeddedResource Include="Resources\Keyboard.bmp" />
-      <EmbeddedResource Include="Resources\LiberationSerif.acf" />
-      <EmbeddedResource Include="Resources\Max.bmp" />
-      <EmbeddedResource Include="Resources\Max_Hover.bmp" />
-      <EmbeddedResource Include="Resources\Max_Press.bmp" />
-      <EmbeddedResource Include="Resources\MenuSelectionGradient.bmp" />
-      <EmbeddedResource Include="Resources\Min.bmp" />
-      <EmbeddedResource Include="Resources\Min_Hover.bmp" />
-      <EmbeddedResource Include="Resources\Min_Press.bmp" />
       <EmbeddedResource Include="Resources\Pointer.bmp" />
       <EmbeddedResource Include="Resources\Pointer_IBeam.bmp" />
       <EmbeddedResource Include="Resources\Pointer_Move.bmp" />
       <EmbeddedResource Include="Resources\Pointer_Resize.bmp" />
-      <EmbeddedResource Include="Resources\Power.bmp" />
-      <EmbeddedResource Include="Resources\Question.bmp" />
-      <EmbeddedResource Include="Resources\RadioButton.bmp" />
-      <EmbeddedResource Include="Resources\RadioButton_Checked.bmp" />
-      <EmbeddedResource Include="Resources\Segment.acf" />
-      <EmbeddedResource Include="Resources\Serif.acf" />
-      <EmbeddedResource Include="Resources\Shadow_Corner_BottomLeft.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Corner_BottomRight.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Corner_TopLeft.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Corner_TopRight.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Edge_Bottom.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Edge_Left.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Edge_Right.bmp" />
-      <EmbeddedResource Include="Resources\Shadow_Edge_Top.bmp" />
-      <EmbeddedResource Include="Resources\TitleBar_Left.bmp" />
-      <EmbeddedResource Include="Resources\TitleBar_Middle.bmp" />
-      <EmbeddedResource Include="Resources\TitleBar_Right.bmp" />
-      <EmbeddedResource Include="Resources\Wallpaper.bmp" />
     </ItemGroup>
 
     <ItemGroup>
@@ -125,11 +45,9 @@
         <PackageReference Include="Cosmos.Debug.Kernel" Version="0-*" NoWarn="NU1604" />
         <PackageReference Include="Cosmos.System2" Version="0-*" NoWarn="NU1604" />
         <PackageReference Include="Cosmos.Plugs" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="CosmosFtpServer" Version="1.0.9" />
         <PackageReference Include="CosmosHttp" Version="1.0.4" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="GUI\" />
+        <PackageReference Include="PrismAPI" Version="1.0.3" />
     </ItemGroup>
 
 </Project>
