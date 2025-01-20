@@ -20,7 +20,7 @@ namespace saor.GUI
         static Dock dock = new();
         public static void BeforeRun()
         {
-            Canvas = Display.GetDisplay(1280, 720);
+            Canvas = Display.GetDisplay(640, 480);
             Canvas.Update();
             defaultAppLogo = Resources.Program;
             MouseManager.ScreenWidth = Canvas.Width;
