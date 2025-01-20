@@ -30,6 +30,7 @@ namespace saor.Core
 
         protected override void Run()
         {
+            WindowManager.Update();
         }
     }
 }
