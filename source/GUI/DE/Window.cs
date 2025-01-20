@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cosmos.System;
 using PrismAPI.Graphics;
+using Resources = saor.Core.Resources;
 
 namespace saor.GUI.DE
 {
