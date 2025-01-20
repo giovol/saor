@@ -14,24 +14,20 @@ namespace saor.GUI
     {
         public static Display Canvas;
         public static Canvas defaultAppLogo;
-        public static Canvas bootLogo;
-        public static Canvas Background;
-        public static Canvas Mouse;
         public static bool Pressed;
         public static List<App> appList = new();
-        public static Color accentColor;
+        public static Color accentColor = Color.Black;
+        static Dock dock = new();
         public static void BeforeRun()
         {
-            Mouse = Resources.Mouse;
-            bootLogo = new Canvas(1280, 720);
             Canvas = Display.GetDisplay(1280, 720);
             Canvas.Update();
-            Background = new Canvas(1280, 720);
-            defaultAppLogo = new Canvas(128, 128);
+            defaultAppLogo = Resources.Program;
             MouseManager.ScreenWidth = Canvas.Width;
             MouseManager.ScreenHeight = Canvas.Height;
             MouseManager.X = (uint)Canvas.Width / 2;
             MouseManager.Y = (uint)Canvas.Height / 2;
+            appList.Add(new Clock(200,200,100,100));    
         }
         public static void Run()
         {
@@ -45,14 +41,17 @@ namespace saor.GUI
                     break;
             }
             Canvas.Clear();
-            Canvas.DrawImage(0,0,Background,false);
+            if(Canvas.Width == 1280 & Canvas.Height == 720)
+            {
+                Canvas.DrawImage(0, 0, Resources.Background, false);
+            }
             foreach (App app in appList)
             {
                 app.Update();
             }
             dock.Update();
 
-            Canvas.DrawImage((int)MouseManager.X, (int)MouseManager.Y, Mouse);
+            Canvas.DrawImage((int)MouseManager.X, (int)MouseManager.Y, Resources.Mouse);
 
             Canvas.Update();
         }
