@@ -25,12 +25,10 @@ namespace saor.Core
         protected override void BeforeRun()
         {
             Resources.Initialize();
-            WindowManager.Start();
         }
 
         protected override void Run()
         {
-            WindowManager.Update();
         }
     }
 }
